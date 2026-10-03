@@ -1,0 +1,42 @@
+# Built files and outputs
+*.iml
+.gradle/
+/build/
+**/build/
+/captures/
+.externalNativeBuild/
+.cxx/
+*.apk
+*.aab
+*.dex
+*.class
+
+# Local configuration & environment variables
+local.properties
+
+# Android Studio / IntelliJ IDEA
+.idea/caches
+.idea/libraries
+.idea/modules.xml
+.idea/workspace.xml
+.idea/navEditor.xml
+.idea/assetWizardSettings.xml
+.idea/deploymentTargetSelector.xml
+.idea/shelf/
+.idea/tasks.xml
+.idea/usage.statistics.xml
+.idea/vcs.xml
+.navigation/
+
+# OS / System files
+.DS_Store
+Thumbs.db
+
+# Signing files & Keystores
+*.jks
+*.keystore
+*.pepk
+
+# Profiling and logs
+*.log
+*.hprof
