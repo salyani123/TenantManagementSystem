@@ -9,7 +9,7 @@ data class Tenant(
         return """
             Tenant: $name
             Phone: $phone
-            Rent paid: $rent
+            Rent paid: Ksh $rent
         """.trimIndent()
     }
 }
