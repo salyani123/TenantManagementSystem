@@ -1,4 +1,6 @@
-# Built files and outputs
+# =========================================================================
+# Android & Gradle Build Outputs
+# =========================================================================
 *.iml
 .gradle/
 /build/
@@ -6,17 +8,35 @@
 /captures/
 .externalNativeBuild/
 .cxx/
+ndkBuild/
 *.apk
+*.ap_
 *.aab
 *.dex
 *.class
+*.so
+*.o
 
-# Local configuration & environment variables
+# =========================================================================
+# Local Configuration & Secrets
+# =========================================================================
 local.properties
+secrets.properties
+keystore.properties
 
-# Android Studio / IntelliJ IDEA
-.idea/caches
-.idea/libraries
+# Signing Keys & Keystores
+*.jks
+*.keystore
+*.pepk
+*.p12
+*.pem
+*.key
+
+# =========================================================================
+# Android Studio & IntelliJ IDEA
+# =========================================================================
+.idea/caches/
+.idea/libraries/
 .idea/modules.xml
 .idea/workspace.xml
 .idea/navEditor.xml
@@ -26,17 +46,38 @@ local.properties
 .idea/tasks.xml
 .idea/usage.statistics.xml
 .idea/vcs.xml
+.idea/render.user.xml
+.idea/dataSources/
+.idea/dataSources.xml
+.idea/dataSources.local.xml
+.idea/sqlDataSources.xml
+.idea/dynamic.xml
 .navigation/
+*.ipr
+*.iws
 
-# OS / System files
+# =========================================================================
+# OS / Editor Artifacts
+# =========================================================================
+# macOS
 .DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+
+# Windows
 Thumbs.db
+ehthumbs.db
+Desktop.ini
 
-# Signing files & Keystores
-*.jks
-*.keystore
-*.pepk
+# Editors / Swap files
+*~
+*.swp
+*.swo
 
-# Profiling and logs
+# =========================================================================
+# Profiling & Memory Dumps
+# =========================================================================
 *.log
 *.hprof
