@@ -5,4 +5,5 @@ plugins {
     // Safe Args: generates calsses for passing data between screens
 
     id("androidx.navigation.safeargs.kotlin") version "2.10.2" apply false
+    id("com.google.devtools.ksp") version "2.3.12" apply false
 }
