@@ -1,12 +1,21 @@
 plugins {
     alias(libs.plugins.android.application)
+
+    // NEW: switch Safe Args on for this app
+
     id("androidx.navigation.safeargs.kotlin")
+    id("com.google.devtools.ksp")
 }
 
 android {
     namespace = "com.example.tenantmanagementsystem"
     compileSdk {
         version = release(37)
+    }
+
+    buildFeatures {
+        viewBinding = true
+        dataBinding = true
     }
 
     defaultConfig {
@@ -30,19 +39,24 @@ android {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
     }
-    buildFeatures {
-        viewBinding = true
-        dataBinding = true
-    }
+
 }
 
 dependencies {
+    implementation("androidx.room:room-runtime:2.7.2")
+    implementation("androidx.room:room-ktx:2.7.2")
+    implementation("androidx.lifecycle:lifecycle-livedata-core:2.8.7")
+    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.8.7")
+    implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.8.7")
+    implementation("androidx.fragment:fragment-ktx:1.8.5")
+    ksp("androidx.room:room-compiler:2.7.2")
+
+    implementation("androidx.navigation:navigation-fragment-ktx:2.10.2")
+    implementation("androidx.navigation:navigation-ui-ktx:2.10.2")
     implementation(libs.androidx.activity.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.androidx.constraintlayout)
     implementation(libs.androidx.core.ktx)
-    implementation(libs.androidx.navigation.fragment.ktx)
-    implementation(libs.androidx.navigation.ui.ktx)
     implementation(libs.material)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.espresso.core)
