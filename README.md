@@ -18,5 +18,5 @@ Screens → TenantViewModel (LiveData) → TenantRepository → Room
 | 2 ViewModel | Eugene Mirimba  | 190524        | [Stage 2: TenantViewModel - #2](https://github.com/salyani123/TenantManagementSystem/pull/2)                           |
 | 3 Room | Aaron Museo     | 165689        | [Stage 3: Room database - #1](https://github.com/salyani123/TenantManagementSystem/pull/1)                             |
 | 4 Screens | Japheth Njuguna | 192194        | [Stage 4: Screens use the ViewModel - #3](https://github.com/salyani123/TenantManagementSystem/pull/3)                 |
-| 5 Data integration | Mark Ndungu     | 164948        | [Stage 5: Save tenants in Room - #4](https://github.com/salyani123/TenantManagementSystem/pull/4)                        |
-| 6 Release | Yusuf Salyani   | 147935        | (link)                                                                                                                 |
+| 5 Data integration | Mark Ndungu     | 164948        | [Stage 5: Save tenants in Room - #4](https://github.com/salyani123/TenantManagementSystem/pull/4)                      |
+| 6 Release | Yusuf Salyani   | 147935        | [Stage 6: Release v1.0 - #6](https://github.com/salyani123/TenantManagementSystem/pull/6)                                                                                     |
