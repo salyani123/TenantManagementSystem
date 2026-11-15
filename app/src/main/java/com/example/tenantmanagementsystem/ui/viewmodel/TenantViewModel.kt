@@ -5,8 +5,8 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.map
-import com.example.tenantmanagementsystem.data.model.Tenant
-import com.example.tenantmanagementsystem.data.repository.TenantRepository
+import com.example.tenantmanagementsystem.Tenant
+import com.example.tenantmanagementsystem.TenantRepository
 
 class TenantViewModel : ViewModel() {
     private val _tenants = MutableLiveData<List<Tenant>>(TenantRepository.tenants.toList())
